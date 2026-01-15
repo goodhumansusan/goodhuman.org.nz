@@ -106,5 +106,36 @@ button:hover,
 .cta:hover {
   opacity: 0.9;
 }
+/* --- Fix: nav logo size --- */
+header.nav img.logo {
+  height: 36px !important;  /* try 36; use 40 if you want a touch bigger */
+  width: auto !important;
+}
+/* --- Fix: hero size + headline size --- */
+.hero {
+  padding: 40px 24px !important;  /* reduces banner height */
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 4.2vw, 3.2rem) !important; /* smaller but responsive */
+  line-height: 1.05 !important;
+  margin: 0 0 14px 0 !important;
+}
+main { padding-top: 40px !important; }
+/* --- Fix: faint text --- */
+.muted,
+.eyebrow,
+.kicker,
+.tagline,
+.small,
+small,
+.hero .pill,
+.hero .badge {
+  color: #334155 !important; /* slate */
+  opacity: 1 !important;
+}
+header.nav {
+  padding: 12px 24px !important;
+}
 
 
