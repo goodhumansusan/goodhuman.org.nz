@@ -168,5 +168,24 @@ h1 {
 .hero {
   padding: 32px 24px !important;
 }
+/* === Readability override: force dark text on light background === */
+html, body {
+  color: #111827 !important;
+}
+
+/* Force common text elements to inherit dark text */
+h1, h2, h3, h4, h5, h6,
+p, li, span, div, small, label, strong, em {
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+/* Keep links readable */
+a { color: #0f172a !important; }
+
+/* Keep button text white */
+button, .button, .cta {
+  color: #ffffff !important;
+}
 
 
