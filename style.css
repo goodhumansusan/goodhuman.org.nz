@@ -101,4 +101,6 @@ img.logo {
   width: auto !important;
   display: block;
 }
-header { outline: 4px solid red !important; }
+/* TEST: should be impossible to miss */
+header.nav { outline: 6px solid red !important; }
+
