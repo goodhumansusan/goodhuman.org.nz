@@ -8,10 +8,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav,
 header {
+/* Header base */
+header.nav {
+  background: #ffffff;
+}
+
+/* Logo pill (hides halo nicely) */
 header.nav a.brand {
-  background: #fff;
+  background: #ffffff;
   padding: 6px 10px;
-  border-radius: 14px;
+  border-radius: 16px;
+}
+
 }
 
 }
@@ -34,13 +42,6 @@ button,
   color: #ffffff;
 }
 
-.goodhuman-logo {
-  width: 220px !important;
-  max-width: 220px !important;
-  height: auto !important;
-  display: block;
-  margin: 0 auto;
-}
 
 /* ===== FORCE LIGHT THEME (override dark gradients) ===== */
 
@@ -89,14 +90,13 @@ p, li, small, .muted {
   background: transparent;
   filter: drop-shadow(0 0 0 rgba(0,0,0,0));
 }
-.logo {
-  mix-blend-mode: multiply;
-}
-.logo {
-  height: 56px;   /* was ~44px */
+/* Nav logo sizing */
+header.nav img.logo {
+  height: 72px;          /* try 72; if too big use 64 */
   width: auto;
   display: block;
-  mix-blend-mode: multiply;
+}
+
 }
 /* force nav logo size */
 header .logo,
@@ -111,6 +111,11 @@ header.nav img.logo {
   height: 64px !important;  /* try 64; if too big, use 56 */
   width: auto !important;
   display: block;
+}
+header.nav {
+  height: auto !important;
+  padding: 18px 24px;      /* gives breathing room */
+  overflow: visible !important;
 }
 
 
