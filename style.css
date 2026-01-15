@@ -1,3 +1,9 @@
+/* === Global light theme === */
+body {
+  background-color: #f7f9fb;   /* soft light grey */
+  color: #1f2933;              /* dark charcoal text */
+}
+
 .goodhuman-logo {
   width: 220px !important;
   max-width: 220px !important;
