@@ -292,6 +292,17 @@ header.nav {
   height: auto !important;
   overflow: hidden !important;
 }
+/* === NAV LOGO: make it smaller (correct selector) === */
+header.nav a.brand img.goodhuman-logo {
+  height: 34px !important;   /* change to 38 if you want slightly bigger */
+  width: auto !important;
+  display: block !important;
+}
+/* === NAV HEIGHT: reduce banner/header thickness === */
+header.nav {
+  padding: 10px 20px !important;
+}
+height: 40px !important;
 
 
 }
