@@ -123,10 +123,11 @@ p, li, small { color: #111827 !important; }
 
 /* NAV LOGO: lock size so PNG can’t blow out */
 header.nav img.logo {
-  height: 64px !important;   /* change to 56px if you want smaller */
+  height: 48px !important;   /* change to 56px if you want smaller */
   width: auto !important;
   display: block;
 }
+
 
 
 
