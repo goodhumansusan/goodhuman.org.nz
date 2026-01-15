@@ -93,3 +93,11 @@ p, li, small, .muted {
   display: block;
   mix-blend-mode: multiply;
 }
+/* force nav logo size */
+header .logo,
+.nav .logo,
+img.logo {
+  height: 64px !important;   /* try 64; if too big, use 56 */
+  width: auto !important;
+  display: block;
+}
