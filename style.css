@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0f172a;
 }
 .nav,
-header {
+header 
 /* Header base */
 header.nav {
   background: #ffffff;
@@ -32,28 +32,28 @@ button,
 
 
 /* ===== FORCE LIGHT THEME (override dark gradients) ===== */
-
+{
 /* page base */
 html, body {
   background: #f7f9fb !important;
   color: #111827 !important;
 }
-
+{
 /* kill common dark wrapper backgrounds */
 header, main, section, .hero, .wrap, .page, .container, .content {
   background: transparent !important;
 }
-
+{
 /* make nav readable on light */
 header, .nav {
   background: #ffffff !important;
   border-bottom: 1px solid #e5e7eb;
 }
-
+{
 header a, .nav a {
   color: #111827 !important;
 }
-
+{
 /* headings + paragraphs */
 h1, h2, h3, h4, h5, h6 {
   color: #0f172a !important;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li, small, .muted {
   color: #111827 !important;
 }
-
+{
 /* cards/panels (so they don't look like dark glass) */
 .card, .panel, .box, .glass {
   background: #ffffff !important;
@@ -74,17 +74,59 @@ p, li, small, .muted {
 .card, .panel, .box, .glass {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
 }
-}
+
 header.nav {
   height: auto !important;
   padding: 18px 24px;      /* gives breathing room */
   overflow: visible !important;
+/* =========================
+   FINAL RESET (Light + Logo)
+   Put this at the bottom
+   ========================= */
+
+/* Light theme base */
+html, body {
+  background: #f7f9fb !important;
+  color: #111827 !important;
 }
-/* NAV LOGO — single source of truth */
+
+/* Make header light */
+header.nav {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 18px 24px;
+}
+
+/* Nav links */
+header.nav a {
+  color: #111827 !important;
+}
+
+/* Hero / sections: remove dark gradients */
+.hero, main, section, .wrap, .page, .container {
+  background: transparent !important;
+}
+
+/* Headings and text */
+h1, h2, h3, h4, h5, h6 { color: #0f172a !important; }
+p, li, small { color: #111827 !important; }
+
+/* Cards / panels (no dark glass) */
+.card, .panel, .box, .glass {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* NAV LOGO: lock size so PNG can’t blow out */
 header.nav img.logo {
-  height: 48px;       /* adjust: 56px if you want smaller */
-  width: auto;
+  height: 64px !important;   /* change to 56px if you want smaller */
+  width: auto !important;
   display: block;
 }
+
 
 
