@@ -82,7 +82,7 @@ header.nav {
 }
 /* NAV LOGO — single source of truth */
 header.nav img.logo {
-  height: 64px;       /* adjust: 56px if you want smaller */
+  height: 48px;       /* adjust: 56px if you want smaller */
   width: auto;
   display: block;
 }
