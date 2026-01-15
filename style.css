@@ -279,6 +279,19 @@ h1 {
   line-height: 1.05 !important;
   margin-top: 0 !important;
 }
+/* Force logo size (your logo class is goodhuman-logo) */
+header.nav img.goodhuman-logo {
+  height: 34px !important;   /* try 34; use 40 if you want bigger */
+  width: auto !important;
+  display: block !important;
+}
+
+/* Keep header height under control */
+header.nav {
+  padding: 8px 20px !important;
+  height: auto !important;
+  overflow: hidden !important;
+}
 
 
 }
