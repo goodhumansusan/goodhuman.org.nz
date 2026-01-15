@@ -37,3 +37,46 @@ button,
   margin: 0 auto;
 }
 
+/* ===== FORCE LIGHT THEME (override dark gradients) ===== */
+
+/* page base */
+html, body {
+  background: #f7f9fb !important;
+  color: #111827 !important;
+}
+
+/* kill common dark wrapper backgrounds */
+header, main, section, .hero, .wrap, .page, .container, .content {
+  background: transparent !important;
+}
+
+/* make nav readable on light */
+header, .nav {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header a, .nav a {
+  color: #111827 !important;
+}
+
+/* headings + paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+p, li, small, .muted {
+  color: #111827 !important;
+}
+
+/* cards/panels (so they don't look like dark glass) */
+.card, .panel, .box, .glass {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb;
+}
+
+/* optional: soften shadows for light theme */
+.card, .panel, .box, .glass {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
+}
