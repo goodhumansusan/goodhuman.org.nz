@@ -101,3 +101,4 @@ img.logo {
   width: auto !important;
   display: block;
 }
+header { outline: 4px solid red !important; }
