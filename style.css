@@ -3,6 +3,9 @@ body {
   background-color: #f7f9fb;   /* soft light grey */
   color: #1f2933;              /* dark charcoal text */
 }
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a;
+}
 
 .goodhuman-logo {
   width: 220px !important;
