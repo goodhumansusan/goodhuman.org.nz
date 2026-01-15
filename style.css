@@ -12,18 +12,6 @@ header {
 header.nav {
   background: #ffffff;
 }
-
-/* Logo pill (hides halo nicely) */
-header.nav a.brand {
-  background: #ffffff;
-  padding: 6px 10px;
-  border-radius: 16px;
-}
-
-}
-
-}
-
 .nav a,
 header a {
   color: #1f2933;
@@ -86,36 +74,17 @@ p, li, small, .muted {
 .card, .panel, .box, .glass {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
 }
-.logo {
-  background: transparent;
-  filter: drop-shadow(0 0 0 rgba(0,0,0,0));
-}
-/* Nav logo sizing */
-header.nav img.logo {
-  height: 72px;          /* try 72; if too big use 64 */
-  width: auto;
-  display: block;
-}
-
-}
-/* force nav logo size */
-header .logo,
-.nav .logo,
-img.logo {
-  height: 64px !important;   /* try 64; if too big, use 56 */
-  width: auto !important;
-  display: block;
-}
-/* Nav logo sizing */
-header.nav img.logo {
-  height: 64px !important;  /* try 64; if too big, use 56 */
-  width: auto !important;
-  display: block;
 }
 header.nav {
   height: auto !important;
   padding: 18px 24px;      /* gives breathing room */
   overflow: visible !important;
+}
+/* NAV LOGO — single source of truth */
+header.nav img.logo {
+  height: 64px;       /* adjust: 56px if you want smaller */
+  width: auto;
+  display: block;
 }
 
 
