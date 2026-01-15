@@ -80,3 +80,10 @@ p, li, small, .muted {
 .card, .panel, .box, .glass {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
 }
+.logo {
+  background: transparent;
+  filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+}
+.logo {
+  mix-blend-mode: multiply;
+}
