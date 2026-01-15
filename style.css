@@ -254,8 +254,32 @@ header.nav .nav-inner {
 .hero p {
   margin: 10px 0 0 0 !important;
   font-size: 1rem !important;
+}/* === FORCE HEADER + BANNER SMALLER (site-specific) === */
+
+/* Header/nav height */
+header.nav {
+  padding: 8px 20px !important;
+  min-height: unset !important;
 }
-.hero, .hero-section, .banner, .masthead { padding: 24px 20px !important; }
+
+/* Logo size */
+header.nav img.logo {
+  height: 32px !important;
+  width: auto !important;
+}
+
+/* Kill any huge top spacing below header */
+main {
+  padding-top: 24px !important;
+}
+
+/* FORCE all H1s smaller (homepage headline) */
+h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
+  line-height: 1.05 !important;
+  margin-top: 0 !important;
+}
+
 
 }
 
