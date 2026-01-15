@@ -219,6 +219,43 @@ footer,
   color: #0f172a !important;
   opacity: 1 !important;
 }
+/* === Reduce header + hero banner size === */
+
+/* Header: reduce vertical space */
+header.nav {
+  padding: 8px 20px !important;
+}
+
+/* Logo: smaller */
+header.nav img.logo {
+  height: 32px !important;   /* try 32; use 36 if too small */
+  width: auto !important;
+}
+
+/* If your menu sits too low/high, align it */
+header.nav .wrap,
+header.nav .nav-inner {
+  align-items: center !important;
+}
+
+/* Hero/banner: reduce top/bottom padding */
+.hero {
+  padding: 24px 20px !important;
+}
+
+/* Headline: smaller and responsive */
+.hero h1 {
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem) !important;
+  line-height: 1.05 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+/* Subheading paragraph: slightly tighter */
+.hero p {
+  margin: 10px 0 0 0 !important;
+  font-size: 1rem !important;
+}
+.hero, .hero-section, .banner, .masthead { padding: 24px 20px !important; }
 
 }
 
