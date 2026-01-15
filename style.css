@@ -187,5 +187,39 @@ a { color: #0f172a !important; }
 button, .button, .cta {
   color: #ffffff !important;
 }
+/* === Footer readability fix === */
+footer,
+.footer,
+.site-footer,
+#footer,
+.footer * ,
+.site-footer * ,
+#footer * {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+footer a,
+.footer a,
+.site-footer a,
+#footer a {
+  color: #0f172a !important;
+}
+footer,
+.footer,
+.site-footer,
+#footer {
+  background: #f7f9fb !important;
+  border-top: 1px solid #e5e7eb;
+}
+/* Make headings inside light panels readable */
+.card h1, .card h2, .card h3,
+.panel h1, .panel h2, .panel h3,
+.box h1, .box h2, .box h3 {
+  color: #0f172a !important;
+  opacity: 1 !important;
+}
+
+}
 
 
