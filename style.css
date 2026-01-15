@@ -101,5 +101,11 @@ img.logo {
   width: auto !important;
   display: block;
 }
+/* Nav logo sizing */
+header.nav img.logo {
+  height: 64px !important;  /* try 64; if too big, use 56 */
+  width: auto !important;
+  display: block;
+}
 
 
