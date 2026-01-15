@@ -1,133 +1,109 @@
-/* === Global light theme === */
-body {
-  background-color: #f7f9fb;   /* soft light grey */
-  color: #1f2933;              /* dark charcoal text */
+/* =========================
+   GLOBAL LIGHT THEME
+   ========================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;     /* soft light grey */
+  color: #111827;          /* dark readable text */
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: #0f172a;
-}
-.nav,
-header 
-/* Header base */
+
+/* =========================
+   HEADER / NAV
+   ========================= */
+
 header.nav {
   background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 24px;
+  height: auto;
 }
-.nav a,
-header a {
+
+/* Nav links */
+header.nav a {
+  color: #111827;
+  text-decoration: none;
+}
+
+/* =========================
+   LOGO (LOCK SIZE)
+   ========================= */
+
+header.nav img.logo {
+  height: 48px;        /* 🔽 smaller logo */
+  width: auto;
+  display: block;
+}
+
+/* =========================
+   HERO / HEADLINE
+   ========================= */
+
+.hero {
+  background: transparent;
+  padding: 64px 24px;   /* 🔽 smaller banner height */
+}
+
+/* Main headline */
+.hero h1 {
+  font-size: 3rem;      /* 🔽 smaller headline */
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+/* Subtext */
+.hero p {
+  font-size: 1.125rem;
   color: #1f2933;
+  max-width: 720px;
 }
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section, main {
+  background: transparent;
+}
+
+/* =========================
+   CARDS / PANELS
+   ========================= */
+
 .card,
 .panel,
-.box {
+.box,
+.glass {
   background: #ffffff;
-  color: #1f2933;
+  color: #111827;
   border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
+
+/* =========================
+   BUTTONS
+   ========================= */
+
 button,
 .button,
 .cta {
   background: #0ea5a4;   /* teal */
   color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-
-/* ===== FORCE LIGHT THEME (override dark gradients) ===== */
-{
-/* page base */
-html, body {
-  background: #f7f9fb !important;
-  color: #111827 !important;
+button:hover,
+.button:hover,
+.cta:hover {
+  opacity: 0.9;
 }
-{
-/* kill common dark wrapper backgrounds */
-header, main, section, .hero, .wrap, .page, .container, .content {
-  background: transparent !important;
-}
-{
-/* make nav readable on light */
-header, .nav {
-  background: #ffffff !important;
-  border-bottom: 1px solid #e5e7eb;
-}
-{
-header a, .nav a {
-  color: #111827 !important;
-}
-{
-/* headings + paragraphs */
-h1, h2, h3, h4, h5, h6 {
-  color: #0f172a !important;
-}
-
-p, li, small, .muted {
-  color: #111827 !important;
-}
-{
-/* cards/panels (so they don't look like dark glass) */
-.card, .panel, .box, .glass {
-  background: #ffffff !important;
-  color: #111827 !important;
-  border: 1px solid #e5e7eb;
-}
-
-/* optional: soften shadows for light theme */
-.card, .panel, .box, .glass {
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
-}
-
-header.nav {
-  height: auto !important;
-  padding: 18px 24px;      /* gives breathing room */
-  overflow: visible !important;
-/* =========================
-   FINAL RESET (Light + Logo)
-   Put this at the bottom
-   ========================= */
-
-/* Light theme base */
-html, body {
-  background: #f7f9fb !important;
-  color: #111827 !important;
-}
-
-/* Make header light */
-header.nav {
-  background: #ffffff !important;
-  border-bottom: 1px solid #e5e7eb;
-  height: auto !important;
-  overflow: visible !important;
-  padding: 18px 24px;
-}
-
-/* Nav links */
-header.nav a {
-  color: #111827 !important;
-}
-
-/* Hero / sections: remove dark gradients */
-.hero, main, section, .wrap, .page, .container {
-  background: transparent !important;
-}
-
-/* Headings and text */
-h1, h2, h3, h4, h5, h6 { color: #0f172a !important; }
-p, li, small { color: #111827 !important; }
-
-/* Cards / panels (no dark glass) */
-.card, .panel, .box, .glass {
-  background: #ffffff !important;
-  color: #111827 !important;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
-}
-
-/* NAV LOGO: lock size so PNG can’t blow out */
-header.nav img.logo {
-  height: 48px !important;   /* change to 56px if you want smaller */
-  width: auto !important;
-  display: block;
-}
-
-
-
 
