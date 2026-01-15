@@ -1,24 +1,8 @@
-/* Global site styles */
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #fbfbf9 /* change this */
-  color: #e5e7eb;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.site-logo{
-  width: min(280px, 70vw);
-  height: auto;
+.goodhuman-logo {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto !important;
   display: block;
   margin: 0 auto;
 }
 
-.hero, .banner, header{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 48px 20px;
-}
