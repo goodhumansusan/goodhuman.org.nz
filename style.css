@@ -87,3 +87,9 @@ p, li, small, .muted {
 .logo {
   mix-blend-mode: multiply;
 }
+.logo {
+  height: 56px;   /* was ~44px */
+  width: auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
