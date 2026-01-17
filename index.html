@@ -15,62 +15,95 @@
 <body>
   <header class="header">
     <div class="container header-inner">
-      <img src="logo.png" alt="Good Human logo" class="logo" />
+      <a class="brand" href="#top" aria-label="Good Human home">
+        <img src="logo.png" alt="Good Human logo" class="logo" />
+      </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
-        <a href="#marketing">Marketing</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
-      
         <div class="hero-text">
           <h1>Good Human</h1>
-          <p>
-            Practical, compliant, commercially focused HR support for small to medium-sized businesses
-            across Tauranga and New Zealand.
+          <p class="lead">
+            Practical HR support for small to medium-sized businesses — calm advice, clear steps,
+            and compliant outcomes. Based in Tauranga, working with clients across New Zealand.
           </p>
-          <a class="button" href="#contact">Get in touch</a>
+
+          <div class="cta-row">
+            <a class="button" href="#contact">Get in touch</a>
+            <a class="button button-ghost" href="#services">See what I offer</a>
+          </div>
+
+          <p class="micro">
+            Need help with something urgent? You can book one-off advice, a small project, or ongoing support.
+          </p>
         </div>
+
+        <!-- Summary box (right side) -->
+        <aside class="hero-summary" aria-label="What we offer summary">
+          <h2>At a glance</h2>
+
+          <ul class="ticks">
+            <li>Day-to-day HR advice</li>
+            <li>Employment agreements & policies</li>
+            <li>Hiring support & onboarding</li>
+            <li>Performance & tricky conversations</li>
+            <li>Restructure / redundancy support</li>
+          </ul>
+
+          <div class="summary-divider"></div>
+
+          <p class="summary-small">
+            Friendly, logical, and practical — focused on protecting your business and helping your people thrive.
+          </p>
+
+          <a class="summary-link" href="#pricing">View pricing →</a>
+        </aside>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
-        <h2>About Good Human</h2>
+        <h2>About</h2>
 
         <p>
-          Good Human is a Human Resources business based in Tauranga, New Zealand, providing practical,
-          compliant, commercially focused HR support to small and medium-sized businesses.
+          Good Human provides HR support that’s easy to understand and easy to action. Whether you’re hiring your
+          first employee, managing growth, or navigating a difficult situation, I help you do the right thing —
+          with confidence and care.
         </p>
 
-        <p>
-          Good Human operates on a user-pays model offering flexible HR services both locally and remotely
-          across New Zealand.
-        </p>
+        <div class="two-col">
+          <div class="card soft">
+            <h3>How I work</h3>
+            <ul>
+              <li><strong>Practical:</strong> clear next steps, not jargon.</li>
+              <li><strong>Compliant:</strong> aligned to NZ employment law and best practice.</li>
+              <li><strong>Commercial:</strong> realistic advice that fits your workplace.</li>
+              <li><strong>Human:</strong> fair, respectful processes and communication.</li>
+            </ul>
+          </div>
 
-        <h3>Vision & Values</h3>
-        <p>
-          Good Human exists to help businesses be good employers and good humans.
-          Our values include integrity, fairness, empathy, and practical excellence.
-        </p>
-
-        <h3>Who We Work With</h3>
-        <ul>
-          <li>Small to medium-sized businesses</li>
-          <li>Business owners without in-house HR</li>
-          <li>Growing teams navigating complexity</li>
-          <li>Employers who care about doing things properly</li>
-        </ul>
+          <div class="card soft">
+            <h3>Who I’m a good fit for</h3>
+            <ul>
+              <li>SMEs without in-house HR</li>
+              <li>Owner-operators and managers who need backup</li>
+              <li>Growing teams building better people processes</li>
+              <li>Employers who want to be both fair and firm</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -79,107 +112,74 @@
       <div class="container">
         <h2>Services</h2>
         <p>
-          Good Human helps businesses navigate people matters with confidence, clarity, and care.
-          Whether you’re hiring your first employee, managing growth, or dealing with complex employment issues,
-          we offer practical HR support that’s compliant, human, and fit for real workplaces.
+          Pick what you need — from quick advice to full support through a process. If you’re not sure where to start,
+          tell me what’s happening and I’ll recommend the simplest path.
         </p>
 
         <div class="grid">
           <div class="card">
-            <h3>HR Advisory & Support</h3>
+            <h3>HR advice & support</h3>
             <ul>
-              <li>Day-to-day HR questions and guidance</li>
-              <li>Interpreting and applying NZ employment legislation</li>
-              <li>Managing employee issues calmly and correctly</li>
-              <li>Coaching managers through people conversations</li>
-              <li>Risk management and best-practice advice</li>
+              <li>Everyday HR questions</li>
+              <li>Manager coaching for people conversations</li>
+              <li>Guidance on risks and options</li>
+              <li>Templates and documentation</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Recruitment & Hiring Support</h3>
+            <h3>Hiring & onboarding</h3>
             <ul>
               <li>Role scoping and position descriptions</li>
-              <li>Job ads and recruitment advice</li>
-              <li>Interview planning and selection guidance</li>
-              <li>Employment agreements and offer letters</li>
-              <li>Practical onboarding support</li>
+              <li>Interview support and selection guidance</li>
+              <li>Offers, agreements, onboarding checklists</li>
+              <li>Trial / probation guidance</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Agreements & Documentation</h3>
+            <h3>Contracts & policies</h3>
             <ul>
-              <li>Employment agreements (permanent, fixed-term, casual)</li>
+              <li>Employment agreements (all types)</li>
               <li>Contractor agreements</li>
-              <li>Position descriptions</li>
-              <li>Letters and employment documentation</li>
-              <li>Contract reviews and updates</li>
+              <li>Policies, procedures, code of conduct</li>
+              <li>Reviews and updates</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Performance & Disciplinary</h3>
+            <h3>Performance & conduct</h3>
             <ul>
-              <li>Performance management processes</li>
+              <li>Performance plans and documentation</li>
               <li>Disciplinary processes</li>
-              <li>Investigations and meeting support</li>
-              <li>Manager coaching and documentation</li>
-              <li>Ensuring procedural fairness and compliance</li>
+              <li>Investigations support</li>
+              <li>Meeting prep and letters</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Restructures & Redundancies</h3>
+            <h3>Restructure & redundancy</h3>
             <ul>
-              <li>Restructure planning and advice</li>
-              <li>Redundancy processes</li>
-              <li>Consultation documentation</li>
-              <li>Communication guidance</li>
-              <li>Risk mitigation and compliance</li>
+              <li>Planning, consultation, documentation</li>
+              <li>Communication support</li>
+              <li>Process guidance and compliance</li>
+              <li>Risk management</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Policies & Frameworks</h3>
+            <h3>Pay & role clarity</h3>
             <ul>
-              <li>HR policies and procedures</li>
-              <li>Code of conduct</li>
-              <li>Leave and flexible work policies</li>
-              <li>Health and safety alignment</li>
+              <li>Role clarity and expectations</li>
+              <li>Remuneration review support</li>
+              <li>Allowances and benefits guidance</li>
+              <li>Simple pay structure advice</li>
             </ul>
           </div>
+        </div>
 
-          <div class="card">
-            <h3>Remuneration & Benefits</h3>
-            <ul>
-              <li>Pay and remuneration reviews</li>
-              <li>Role benchmarking</li>
-              <li>Benefits and allowances</li>
-              <li>Pay structure advice</li>
-              <li>Performance-linked remuneration</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Onboarding & Offboarding</h3>
-            <ul>
-              <li>Onboarding frameworks and checklists</li>
-              <li>Probation and trial period processes</li>
-              <li>Exit processes and documentation</li>
-              <li>Knowledge transfer and risk management</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Other Good Stuff</h3>
-            <ul>
-              <li>People strategy, structure and planning</li>
-              <li>Learning, development and training advice</li>
-              <li>Engagement tools</li>
-              <li>Initiatives to attract and retain good humans</li>
-            </ul>
-          </div>
+        <div class="note">
+          <strong>Not sure which service fits?</strong> Send a quick email with what’s going on and I’ll point you to the best option.
         </div>
       </div>
     </section>
@@ -188,67 +188,46 @@
     <section class="section" id="pricing">
       <div class="container">
         <h2>Pricing</h2>
-        <p>Simple, flexible options depending on what your business needs.</p>
+        <p>Flexible options depending on what your business needs right now.</p>
 
         <div class="pricing-grid">
           <div class="price-card">
-            <h3>Hourly Consulting</h3>
+            <h3>Hourly support</h3>
             <p class="price">$160 + GST / hour</p>
-            <p>Practical HR support when you need it.</p>
+            <p>Best for one-off advice, document updates, or short pieces of work.</p>
           </div>
 
           <div class="price-card">
-            <h3>Good Start (HR Essentials)</h3>
+            <h3>Good Start</h3>
             <p class="price">$750 + GST / month</p>
             <ul>
-              <li>Up to 5 hours HR support</li>
-              <li>Phone/email advice</li>
-              <li>Contract and policy guidance</li>
+              <li>Up to 5 hours support</li>
+              <li>Email/phone advice</li>
+              <li>Light document support</li>
             </ul>
           </div>
 
           <div class="price-card">
-            <h3>Good Partner (HR Business Partner)</h3>
+            <h3>Good Partner</h3>
             <p class="price">$1,500 + GST / month</p>
             <ul>
-              <li>Up to 12 hours HR support</li>
-              <li>Performance and disciplinary support</li>
-              <li>Recruitment assistance</li>
+              <li>Up to 12 hours support</li>
+              <li>Hiring + performance support</li>
               <li>Priority response</li>
             </ul>
           </div>
 
           <div class="price-card">
-            <h3>Good Human Recruitment Package</h3>
+            <h3>Recruitment support package</h3>
             <p class="price">$890</p>
             <ul>
-              <li>Marketing – design your advertisement and create Seek listing</li>
-              <li>Candidate care – respond to all your applicants</li>
-              <li>Screening – present shortlist against your requirements</li>
-              <li>Process – coordinate interviews with shortlisted candidates</li>
+              <li>Ad design + Seek listing setup</li>
+              <li>Candidate care (responses to applicants)</li>
+              <li>Screening + shortlist aligned to your needs</li>
+              <li>Interview coordination for shortlisted candidates</li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- MARKETING -->
-    <section class="section" id="marketing">
-      <div class="container">
-        <h2>Marketing & Growth</h2>
-        <p>
-          Growth will be referral-based and organic, supported by LinkedIn presence,
-          local business networks, and professional partnerships.
-        </p>
-
-        <h3>How Good Human Works</h3>
-        <ul>
-          <li>Flexible, user-pays services</li>
-          <li>Hourly, project-based, or retainer options</li>
-          <li>Remote or on-site support</li>
-          <li>Plain-English advice</li>
-          <li>Ethical, people-first approach</li>
-        </ul>
       </div>
     </section>
 
@@ -257,9 +236,17 @@
       <div class="container">
         <h2>Contact</h2>
         <p>
-          Ready to chat? Email us:
-          <a href="mailto:hello@goodhuman.org.nz">hello@goodhuman.org.nz</a>
+          Tell me what you need help with and I’ll come back with a simple plan.
         </p>
+
+        <div class="contact-card">
+          <p class="contact-line">
+            Email: <a href="mailto:hello@goodhuman.org.nz">hello@goodhuman.org.nz</a>
+          </p>
+          <p class="contact-small">
+            Prefer a quick call? Email a couple of times that suit and I’ll suggest a slot.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -271,4 +258,5 @@
   </footer>
 </body>
 </html>
+
 
