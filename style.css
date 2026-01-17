@@ -42,7 +42,7 @@ a{ color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 16px 0;
   gap: 18px;
 }
 
@@ -54,7 +54,7 @@ a{ color: inherit; }
 
 /* Logo */
 .logo{
-  height: 56px;   /* try 52–60 */
+  height: 72px;   /* try 52–60 */
   width: auto;
   object-fit: contain;
   display: block;
@@ -66,23 +66,27 @@ a{ color: inherit; }
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 26px;
-  margin-left: auto; /* pushes the nav to the far right */
+  gap: 32px;
+  margin-left: auto;
   font-family: "DM Sans", Arial, sans-serif;
 }
 
 .nav a{
+  color: #1F5B46;          /* matches your green theme */
   margin: 0;
   padding: 8px 2px;
   text-decoration: none;
-  opacity: 0.9;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
+.nav a:visited{
+  color: #1F5B46;          /* stops purple visited links */
+}
+
 .nav a:hover{
-  opacity: 1;
   text-decoration: underline;
+  opacity: 0.9;
 }
 
 
