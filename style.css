@@ -62,16 +62,27 @@ a{ color: inherit; }
 
 }
 
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 26px;                 /* spacing between menu items */
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
 .nav a{
-  margin-left: 18px;
+  margin: 0;                 /* important: remove old margin rules */
+  padding: 8px 2px;
   text-decoration: none;
-  opacity: 0.85;
+  opacity: 0.9;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .nav a:hover{
   opacity: 1;
   text-decoration: underline;
+}
+
 }
 
 /* HERO */
