@@ -105,12 +105,6 @@ a{ color: inherit; }
   grid-template-columns: 1.05fr 0.95fr;
   gap: 22px;
   align-items: start;
-}
-.hero-summary{
-  grid-column: 2;
-  justify-self: end;
-  width: 100%;
-  max-width: 340px; /* tweak if needed */
 
 }
 
@@ -219,6 +213,11 @@ a{ color: inherit; }
 
 /* Summary box */
 .hero-summary{
+  grid-column: 2;
+  justify-self: end;
+  width: 100%;
+  max-width: 340px;
+
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: var(--radius);
   background: rgba(255,255,255,0.92);
@@ -226,6 +225,7 @@ a{ color: inherit; }
   padding: 18px;
   position: relative;
   overflow: hidden;
+
 }
 
 .hero-summary::before{
