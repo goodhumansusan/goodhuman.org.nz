@@ -297,6 +297,16 @@ header.nav a.brand img.goodhuman-logo {
   height: 34px !important;   /* change to 38 if you want slightly bigger */
   width: auto !important;
   display: block !important;
+   /* Allow the logo to grow inside the nav */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  height: auto;
+}
+
 }
 /* === NAV HEIGHT: reduce banner/header thickness === */
 header.nav {
