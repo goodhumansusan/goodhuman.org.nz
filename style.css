@@ -340,6 +340,82 @@ button, .button, .cta,
 button *, .button *, .cta * {
   color: #ffffff !important;
 }
+/* =====================================================
+   GOOD HUMAN – FINAL OVERRIDES (LOGO + BOX TEXT)
+   Paste at VERY BOTTOM of style.css
+   ===================================================== */
+
+
+/* ---------------- LOGO: ACTUALLY MAKE IT BIGGER ---------------- */
+
+/* Ensure nav layout doesn't shrink the brand/logo */
+header.nav .wrap,
+header.nav .nav-inner,
+header.nav .navinner {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Brand must NOT shrink */
+header.nav a.brand {
+  display: flex !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;      /* stops flex shrinking */
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  line-height: normal !important;
+}
+
+/* Force the logo image size */
+header.nav a.brand img.goodhuman-logo {
+  height: 80px !important;        /* <<< change to 64/72/90 as you like */
+  width: auto !important;
+  max-height: none !important;
+  max-width: none !important;
+  display: block !important;
+}
+
+/* Make sure the header doesn't clip a bigger logo */
+header.nav {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+
+/* ---------------- BOX TEXT: FORCE DARK + NO FADE ---------------- */
+
+/* Covers common “card/box/glass/panel” class patterns */
+.card,
+.panel,
+.box,
+.glass,
+[class*="card"],
+[class*="panel"],
+[class*="box"],
+[class*="glass"] {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+/* Everything inside boxes */
+.card *, .panel *, .box *, .glass *,
+[class*="card"] *, [class*="panel"] *, [class*="box"] *, [class*="glass"] * {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+/* Bullets/markers */
+.card li::marker, .panel li::marker, .box li::marker, .glass li::marker,
+[class*="card"] li::marker, [class*="panel"] li::marker, [class*="box"] li::marker, [class*="glass"] li::marker {
+  color: #111827 !important;
+}
+
+/* Keep button text white */
+button, .button, .cta,
+button *, .button *, .cta * {
+  color: #ffffff !important;
+}
 
 }
 
