@@ -389,6 +389,16 @@ li{
 
   .nav{
     justify-content: flex-start;
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+  }
+
+  .nav{
+    justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
     margin-left: 0;
