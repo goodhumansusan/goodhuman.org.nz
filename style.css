@@ -129,9 +129,13 @@ a{ color: inherit; }
 }
 
 .icon-strip img{
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: block;
+  
+  filter: brightness(0) saturate(100%)
+          invert(23%) sepia(23%) saturate(1026%)
+          hue-rotate(112deg) brightness(92%) contrast(92%);
 }
 
 }
