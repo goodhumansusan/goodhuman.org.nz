@@ -122,17 +122,19 @@ a{
 /* WATERMARK LOGO BEHIND TEXT */
 .hero-watermark{
   position: absolute;
-  right: -40px;
+  right: -80px;
   top: 50%;
-  transform: translateY(-50%) rotate(-4deg);
+  transform: translateY(-50%) rotate(0deg);
   z-index: 1;
-  opacity: 0.10;
+  opacity: 0.09;
   pointer-events: none;
 }
 
 .hero-watermark img{
-  height: 360px;
+  height: 260px;
   width: auto;
+}
+
 }
 
 /* SECTIONS */
