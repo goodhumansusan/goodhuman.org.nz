@@ -115,6 +115,19 @@ a{ color: inherit; }
   align-items: flex-start;
   gap: 10px;
 }
+.icon-strip{
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  opacity: 0.9;
+}
+
+.icon-strip img{
+  width: 30px;
+  height: 30px;
+  display: block;
+}
 
 .pill{
   display: inline-block;
