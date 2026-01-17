@@ -497,10 +497,12 @@ li{
 /* Contact */
 .contact-card{
   margin-top: 10px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(47,125,99,0.25);
   border-radius: var(--radius);
-  background: rgba(255,255,255,0.92);
+  background: rgba(234,245,240,0.85); /* soft green tint */
   padding: 18px;
+}
+
 }
 
 .contact-line{
