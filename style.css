@@ -332,6 +332,29 @@ section li,
 .card li {
   color: #374151; /* slightly softer dark */
 }
+/* FIX: faded/white list text inside cards/boxes */
+section ul, section ol,
+.card ul, .card ol,
+.box ul, .box ol,
+.container ul, .container ol {
+  opacity: 1 !important;
+}
+
+section li,
+.card li,
+.box li,
+.container li {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+/* Make bullet/number markers dark too */
+section li::marker,
+.card li::marker,
+.box li::marker,
+.container li::marker {
+  color: #111827 !important;
+}
 
 
 }
