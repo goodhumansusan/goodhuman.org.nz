@@ -1,5 +1,5 @@
 :root{
-  /* Adjust this to match your logo green */
+  /* Adjust this if you want a different green */
   --brand: #2F7D63;
   --brand-2: #1F5B46;
   --tint: #EAF5F0;
@@ -49,8 +49,9 @@ a{
   padding: 14px 0;
 }
 
+/* Bigger logo */
 .logo{
-  height: 46px;
+  height: 66px;
   width: auto;
 }
 
@@ -68,22 +69,36 @@ a{
 
 /* HERO */
 .hero{
-  padding: 78px 0;
+  padding: 86px 0;
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(900px 300px at 15% 20%, rgba(47,125,99,0.20), transparent 60%),
-    radial-gradient(700px 260px at 85% 10%, rgba(47,125,99,0.14), transparent 55%),
+    radial-gradient(900px 320px at 15% 20%, rgba(47,125,99,0.22), transparent 60%),
+    radial-gradient(700px 260px at 85% 10%, rgba(47,125,99,0.15), transparent 55%),
     #f7f7f7;
 }
 
+.hero-inner{
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text{
+  max-width: 72ch;
+  position: relative;
+  z-index: 2;
+}
+
 .hero h1{
-  font-size: 46px;
+  font-size: 50px;
   margin: 0 0 10px;
   letter-spacing: -0.03em;
 }
 
 .hero p{
   font-size: 18px;
-  max-width: 70ch;
   color: var(--muted);
 }
 
@@ -102,6 +117,22 @@ a{
 .button:hover{
   transform: translateY(-1px);
   box-shadow: 0 16px 30px rgba(47,125,99,0.22);
+}
+
+/* WATERMARK LOGO BEHIND TEXT */
+.hero-watermark{
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-4deg);
+  z-index: 1;
+  opacity: 0.10;
+  pointer-events: none;
+}
+
+.hero-watermark img{
+  height: 360px;
+  width: auto;
 }
 
 /* SECTIONS */
@@ -199,6 +230,23 @@ li{
 
 /* MOBILE */
 @media (max-width: 900px){
+  .logo{
+    height: 56px;
+  }
+
+  .hero{
+    padding: 62px 0;
+  }
+
+  .hero-watermark{
+    right: -120px;
+    opacity: 0.08;
+  }
+
+  .hero-watermark img{
+    height: 260px;
+  }
+
   .grid{
     grid-template-columns: 1fr;
   }
