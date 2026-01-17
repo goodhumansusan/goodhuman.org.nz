@@ -52,10 +52,12 @@ a{ color: inherit; }
 
 /* Header logo (bigger). If your file has lots of whitespace, the object-fit helps. */
 .logo{
-  height: 110px;
-  width: 280px;
+  height: 80px;   /* try 70–90 */
+  width: auto;
   object-fit: contain;
-  object-position: left center;
+  display: block;
+}
+
 }
 
 }
@@ -356,9 +358,11 @@ li{
     grid-template-columns: 1fr;
   }
 
-  .logo{
-    height: 72px;
-    width: 210px;
+.logo{
+  height: 64px;
+  width: auto;
+}
+
   }
 
   .two-col{
