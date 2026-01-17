@@ -37,6 +37,18 @@ header.nav img.logo {
   width: auto;
   display: block;
 }
+/* Allow logo to scale properly */
+.brand {
+  height: auto;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.goodhuman-logo {
+  height: 64px;     /* adjust as you like */
+  width: auto;
+}
 
 /* =========================
    HERO / HEADLINE
