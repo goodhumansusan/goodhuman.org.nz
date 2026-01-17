@@ -501,6 +501,10 @@ li{
   border-radius: var(--radius);
   background: rgba(234,245,240,0.85); /* soft green tint */
   padding: 18px;
+  .contact-line{
+  font-weight: 800;
+}
+
 }
 
 }
