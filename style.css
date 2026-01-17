@@ -129,8 +129,8 @@ a{ color: inherit; }
 }
 
 .icon-strip img{
-  width: 36px !important;
-  height: 36px !important;
+  width: 30px !important;
+  height: 30px !important;
   display: block;
   .icon-strip img{
   filter: brightness(0) saturate(100%) invert(22%) sepia(18%) saturate(1200%)
