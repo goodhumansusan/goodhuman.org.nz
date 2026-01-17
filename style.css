@@ -268,6 +268,78 @@ footer a,
     justify-content: flex-end;
   }
 }
+/* =====================================================
+   GOOD HUMAN – FINAL OVERRIDES
+   (LOGO SIZE + BOX TEXT COLOUR)
+   Paste at VERY BOTTOM of CSS file
+   ===================================================== */
+
+/* ---------- LOGO: force size (no banner growth) ---------- */
+header.nav {
+  overflow: visible !important;
+}
+
+header.nav a.brand {
+  display: flex !important;
+  align-items: center !important;
+  height: auto !important;
+  line-height: normal !important;
+}
+
+/* YOUR LOGO */
+header.nav a.brand > img.goodhuman-logo {
+  height: 72px !important;     /* 🔧 change to 64 if too big */
+  width: auto !important;
+  max-height: none !important;
+  display: block !important;
+}
+
+/* ---------- BOXES / CARDS: force dark readable text ---------- */
+
+/* Target ALL common box/card patterns */
+.card,
+.panel,
+.box,
+.glass,
+[class*="card"],
+[class*="panel"],
+[class*="box"],
+[class*="glass"] {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+/* Force EVERYTHING inside boxes to inherit dark text */
+.card *, .panel *, .box *, .glass *,
+[class*="card"] *, [class*="panel"] *, [class*="box"] *, [class*="glass"] * {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+/* Lists + bullets */
+.card li, .panel li, .box li, .glass li,
+[class*="card"] li, [class*="panel"] li, [class*="box"] li, [class*="glass"] li {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+
+.card li::marker, .panel li::marker, .box li::marker, .glass li::marker,
+[class*="card"] li::marker, [class*="panel"] li::marker, [class*="box"] li::marker, [class*="glass"] li::marker {
+  color: #111827 !important;
+}
+
+/* Muted text inside boxes should still be readable */
+.card .muted, .panel .muted, .box .muted, .glass .muted,
+small, .small {
+  color: #334155 !important;
+  opacity: 1 !important;
+}
+
+/* Keep buttons white */
+button, .button, .cta,
+button *, .button *, .cta * {
+  color: #ffffff !important;
+}
 
 }
 
