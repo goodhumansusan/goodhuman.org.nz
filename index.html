@@ -6,7 +6,6 @@
   <title>Good Human</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Optional: DM Sans (Google Font) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,41 +30,85 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill">HR support • Tauranga + NZ wide</span>
+
           <h1>Good Human</h1>
+
           <p class="lead">
-            Practical HR support for small to medium-sized businesses. Calm advice, clear steps, and compliant outcomes.
-            Based in Tauranga, supporting teams across New Zealand.
+            Calm, practical HR support for small to medium-sized businesses.
+            Clear advice, good documentation, and processes that work in the real world.
           </p>
+
+          <div class="highlights">
+            <div class="highlight">
+              <div class="dot"></div>
+              <div>
+                <strong>Plain English</strong>
+                <span>No HR-speak, no panic.</span>
+              </div>
+            </div>
+
+            <div class="highlight">
+              <div class="dot"></div>
+              <div>
+                <strong>Compliant and fair</strong>
+                <span>Aligned to NZ employment law.</span>
+              </div>
+            </div>
+
+            <div class="highlight">
+              <div class="dot"></div>
+              <div>
+                <strong>Flexible support</strong>
+                <span>Hourly, project, or monthly.</span>
+              </div>
+            </div>
+          </div>
 
           <div class="cta-row">
             <a class="button" href="#contact">Get in touch</a>
-            <a class="button button-ghost" href="#services">See what’s included</a>
+            <a class="button ghost" href="#services">See services</a>
           </div>
 
           <p class="micro">
-            One-off help, short projects, or ongoing support. Whatever makes the most sense.
+            One-off help is welcome. Ongoing support is available. Both come with calm guidance and clear next steps.
           </p>
         </div>
 
-        <!-- Summary box (right side) -->
-        <aside class="hero-summary" aria-label="What Good Human offers summary">
-          <h2>At a glance</h2>
+        <!-- Summary box -->
+        <aside class="hero-summary" aria-label="Services summary">
+          <div class="summary-head">
+            <h2>Services summary</h2>
+            <span class="summary-tag">Most requested</span>
+          </div>
 
           <ul class="ticks">
             <li>Everyday HR advice</li>
-            <li>Employment agreements and documents</li>
+            <li>Employment agreements and letters</li>
             <li>Hiring support and onboarding</li>
-            <li>Performance and difficult conversations</li>
+            <li>Performance and conduct processes</li>
             <li>Restructure and redundancy support</li>
+            <li>Policies and practical frameworks</li>
           </ul>
 
           <div class="summary-divider"></div>
 
-          <p class="summary-small">
-            Friendly, logical, and practical. Less drama, more clarity.
-          </p>
+          <div class="summary-mini-grid" role="table" aria-label="Ways to work together">
+            <div class="mini">
+              <span class="mini-kicker">Hourly</span>
+              <span class="mini-value">$160 + GST</span>
+            </div>
+            <div class="mini">
+              <span class="mini-kicker">Monthly</span>
+              <span class="mini-value">from $750</span>
+            </div>
+            <div class="mini">
+              <span class="mini-kicker">Recruitment</span>
+              <span class="mini-value">$890</span>
+            </div>
+          </div>
 
           <a class="summary-link" href="#pricing">View pricing →</a>
         </aside>
@@ -74,37 +117,35 @@
 
     <!-- ABOUT -->
     <section class="section" id="about">
-      <div class="container">
+      <div class="container narrow">
         <h2>About</h2>
-
         <p>
-          People stuff can be straightforward right up until it isn’t. Good Human helps make it manageable.
-          From day-to-day questions to more complex situations, support is designed to be easy to understand and easy to action.
+          People stuff can be straightforward until it suddenly isn’t. Good Human supports business owners and managers
+          with practical HR advice and calm, compliant processes that are easy to follow.
         </p>
-
         <p>
-          Everything is grounded in New Zealand employment law and best practice, with advice that fits real workplaces.
-          The goal is simple. Do the right thing, write it down properly, and keep things moving.
+          Support is built around real workplaces. The focus stays on fairness, clarity, and keeping things moving.
+          No drama required.
         </p>
 
         <div class="two-col">
           <div class="card soft">
             <h3>What to expect</h3>
             <ul>
-              <li><strong>Clear steps</strong> in plain language</li>
-              <li><strong>Practical options</strong> that suit your team</li>
-              <li><strong>Calm support</strong> through tricky moments</li>
-              <li><strong>Solid documentation</strong> so nothing is left to guesswork</li>
+              <li>Clear steps in plain language</li>
+              <li>Practical options that suit the situation</li>
+              <li>Strong documentation and process support</li>
+              <li>Respectful, fair outcomes</li>
             </ul>
           </div>
 
           <div class="card soft">
-            <h3>Who it’s for</h3>
+            <h3>Who it suits</h3>
             <ul>
               <li>SMEs without in-house HR</li>
-              <li>Owner-operators and managers who want backup</li>
-              <li>Teams growing or tidying up people processes</li>
-              <li>Employers who want to be fair and still get things done</li>
+              <li>Busy managers who want backup</li>
+              <li>Growing teams building better foundations</li>
+              <li>Employers wanting to be fair and firm</li>
             </ul>
           </div>
         </div>
@@ -114,19 +155,20 @@
     <!-- SERVICES -->
     <section class="section" id="services">
       <div class="container">
-        <h2>Services</h2>
-        <p>
-          Support is flexible. Pick one area, or combine a few. If it’s not obvious where to start,
-          share what’s happening and the simplest path forward can be mapped out.
-        </p>
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="section-sub">
+            Pick one area, or bundle support across a few. If it’s not clear where to start, the simplest next step can be mapped out quickly.
+          </p>
+        </div>
 
         <div class="grid">
           <div class="card">
             <h3>HR advice and support</h3>
             <ul>
-              <li>Everyday HR questions and guidance</li>
-              <li>Manager coaching for people conversations</li>
-              <li>Options, risks and next steps</li>
+              <li>Everyday HR questions</li>
+              <li>Manager coaching</li>
+              <li>Options, risks, and next steps</li>
               <li>Templates and documentation</li>
             </ul>
           </div>
@@ -136,7 +178,7 @@
             <ul>
               <li>Role scoping and position descriptions</li>
               <li>Recruitment process support</li>
-              <li>Offers, agreements, onboarding checklists</li>
+              <li>Offers, agreements, checklists</li>
               <li>Trial and probation guidance</li>
             </ul>
           </div>
@@ -144,19 +186,19 @@
           <div class="card">
             <h3>Agreements and documents</h3>
             <ul>
-              <li>Employment agreements and contractor agreements</li>
+              <li>Employment and contractor agreements</li>
               <li>Letters and employment documentation</li>
-              <li>Contract reviews and updates</li>
               <li>Role clarity and expectations</li>
+              <li>Contract reviews and updates</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Performance and conduct</h3>
             <ul>
-              <li>Performance plans and documentation</li>
+              <li>Performance plans</li>
               <li>Disciplinary processes</li>
-              <li>Investigations support</li>
+              <li>Investigation support</li>
               <li>Meeting prep and letters</li>
             </ul>
           </div>
@@ -164,9 +206,9 @@
           <div class="card">
             <h3>Restructure and redundancy</h3>
             <ul>
-              <li>Planning and consultation support</li>
-              <li>Clear documentation and communications</li>
-              <li>Process guidance and compliance</li>
+              <li>Planning and consultation</li>
+              <li>Clear communications</li>
+              <li>Compliance and documentation</li>
               <li>Risk management</li>
             </ul>
           </div>
@@ -175,16 +217,16 @@
             <h3>Policies and frameworks</h3>
             <ul>
               <li>Policies and procedures</li>
-              <li>Code of conduct and guidelines</li>
-              <li>Leave and flexible work policies</li>
-              <li>Simple frameworks that support consistency</li>
+              <li>Code of conduct</li>
+              <li>Leave and flexible work</li>
+              <li>Simple, consistent frameworks</li>
             </ul>
           </div>
         </div>
 
         <div class="note">
           <strong>Not sure what’s needed</strong>
-          Share a short summary of what’s going on and the next best step will be suggested.
+          Email a short summary of what’s happening and the next best step can be suggested.
         </div>
       </div>
     </section>
@@ -192,8 +234,10 @@
     <!-- PRICING -->
     <section class="section" id="pricing">
       <div class="container">
-        <h2>Pricing</h2>
-        <p>Simple options depending on what support looks like.</p>
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <p class="section-sub">Simple options depending on what support looks like.</p>
+        </div>
 
         <div class="pricing-grid">
           <div class="price-card">
@@ -204,65 +248,7 @@
 
           <div class="price-card">
             <h3>Good Start</h3>
-            <p class="price">$750 + GST / month</p>
-            <ul>
-              <li>Up to 5 hours support</li>
-              <li>Email and phone advice</li>
-              <li>Light document support</li>
-            </ul>
-          </div>
+            <p class="price">$750 + GST / month<
 
-          <div class="price-card">
-            <h3>Good Partner</h3>
-            <p class="price">$1,500 + GST / month</p>
-            <ul>
-              <li>Up to 12 hours support</li>
-              <li>Hiring and performance support</li>
-              <li>Priority response</li>
-            </ul>
-          </div>
-
-          <div class="price-card">
-            <h3>Recruitment support package</h3>
-            <p class="price">$890</p>
-            <ul>
-              <li>Ad design and Seek listing setup</li>
-              <li>Candidate care and responses to applicants</li>
-              <li>Screening and shortlist aligned to requirements</li>
-              <li>Interview coordination for shortlisted candidates</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Send an email with a brief outline of what’s happening and what outcome is needed.
-          A simple plan and next steps can follow.
-        </p>
-
-        <div class="contact-card">
-          <p class="contact-line">
-            Email: <a href="mailto:hello@goodhuman.org.nz">hello@goodhuman.org.nz</a>
-          </p>
-          <p class="contact-small">
-            Prefer a call. Include a couple of suitable times and a time zone.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© Good Human</p>
-    </div>
-  </footer>
-</body>
-</html>
 
 
