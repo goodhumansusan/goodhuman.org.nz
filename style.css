@@ -1,164 +1,219 @@
-* {
+:root{
+  /* Adjust this to match your logo green */
+  --brand: #2F7D63;
+  --brand-2: #1F5B46;
+  --tint: #EAF5F0;
+
+  --ink: #111;
+  --muted: #5b5b5b;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --radius: 18px;
+}
+
+*{
   box-sizing: border-box;
 }
 
-body {
+body{
   margin: 0;
   font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.5;
-  color: #111;
-  background: #ffffff;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--tint), #fff 35%);
 }
 
-a {
+a{
   color: inherit;
 }
 
-.container {
+.container{
   width: min(1100px, 92%);
   margin: 0 auto;
 }
 
-.header {
+/* HEADER */
+.header{
   position: sticky;
   top: 0;
-  background: white;
-  border-bottom: 1px solid #eee;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
   z-index: 10;
 }
 
-.header-inner {
+.header-inner{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px 0;
 }
 
-.logo {
+.logo{
   height: 46px;
   width: auto;
 }
 
-.nav a {
+.nav a{
   margin-left: 18px;
   text-decoration: none;
   opacity: 0.85;
   font-weight: 500;
 }
 
-.nav a:hover {
+.nav a:hover{
   opacity: 1;
   text-decoration: underline;
 }
 
-.hero {
-  padding: 70px 0;
-  background: #f7f7f7;
+/* HERO */
+.hero{
+  padding: 78px 0;
+  background:
+    radial-gradient(900px 300px at 15% 20%, rgba(47,125,99,0.20), transparent 60%),
+    radial-gradient(700px 260px at 85% 10%, rgba(47,125,99,0.14), transparent 55%),
+    #f7f7f7;
 }
 
-.hero h1 {
-  font-size: 44px;
+.hero h1{
+  font-size: 46px;
   margin: 0 0 10px;
+  letter-spacing: -0.03em;
 }
 
-.hero p {
+.hero p{
   font-size: 18px;
   max-width: 70ch;
+  color: var(--muted);
 }
 
-.button {
+.button{
   display: inline-block;
   margin-top: 16px;
   padding: 12px 18px;
-  border-radius: 10px;
-  background: black;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
   color: white;
   text-decoration: none;
+  box-shadow: 0 10px 20px rgba(47,125,99,0.18);
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.section {
-  padding: 60px 0;
+.button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(47,125,99,0.22);
 }
 
-.section h2 {
-  margin-top: 0;
+/* SECTIONS */
+.section{
+  padding: 62px 0;
 }
 
-.section h3 {
-  margin-top: 26px;
+.section:nth-of-type(even){
+  background: rgba(234,245,240,0.55);
+  border-top: 1px solid rgba(0,0,0,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
-/* SERVICES GRID */
-.grid {
+h2{
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+h3{
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.section p{
+  max-width: 75ch;
+}
+
+/* GRIDS */
+.grid{
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 18px;
 }
 
-.card {
-  border: 1px solid #eee;
-  border-radius: 14px;
+/* CARDS */
+.card, .price-card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 18px;
-  background: white;
+  background: rgba(255,255,255,0.86);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  position: relative;
+  overflow: hidden;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card::before, .price-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  height:6px;
+  width:100%;
+  background: linear-gradient(90deg, var(--brand), rgba(47,125,99,0.15));
+}
+
+.card:hover, .price-card:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
 }
 
 /* PRICING */
-.pricing-grid {
+.pricing-grid{
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 18px;
 }
 
-.price-card {
-  border: 1px solid #eee;
-  border-radius: 14px;
-  padding: 18px;
-  background: #fff;
-}
-
-.price {
+.price{
   font-size: 22px;
   font-weight: 700;
   margin: 8px 0 14px;
 }
 
 /* LISTS */
-ul {
+ul{
   padding-left: 20px;
   margin: 10px 0 0;
 }
 
-li {
+li{
   margin: 6px 0;
 }
 
 /* FOOTER */
-.footer {
-  border-top: 1px solid #eee;
+.footer{
+  border-top: 1px solid rgba(0,0,0,0.06);
   padding: 25px 0;
   text-align: center;
   opacity: 0.7;
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
-  .grid {
+@media (max-width: 900px){
+  .grid{
     grid-template-columns: 1fr;
   }
 
-  .pricing-grid {
+  .pricing-grid{
     grid-template-columns: 1fr;
   }
 
-  .header-inner {
+  .header-inner{
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .nav a {
+  .nav a{
     margin-left: 0;
     margin-right: 14px;
   }
