@@ -105,7 +105,15 @@ a{ color: inherit; }
   grid-template-columns: 1.05fr 0.95fr;
   gap: 22px;
   align-items: start;
+}
 
+/* Right column wrapper for "View pricing" + summary box */
+.hero-side{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .pill{
@@ -116,15 +124,13 @@ a{ color: inherit; }
   color: var(--brand-2);
   font-weight: 700;
   font-size: 13px;
-
 }
 
 .hero h1{
   font-size: 54px;
   margin: 14px 0 10px;
   letter-spacing: -0.03em;
-  line-height: 1.05; /* <-- add this */
-
+  line-height: 1.05;
 }
 
 .lead{
@@ -213,8 +219,6 @@ a{ color: inherit; }
 
 /* Summary box */
 .hero-summary{
-  grid-column: 2;
-  justify-self: end;
   width: 100%;
   max-width: 340px;
 
@@ -225,7 +229,6 @@ a{ color: inherit; }
   padding: 18px;
   position: relative;
   overflow: hidden;
-
 }
 
 .hero-summary::before{
@@ -287,6 +290,7 @@ a{ color: inherit; }
   margin: 14px 0;
 }
 
+/* Kept (safe even if unused after you remove mini pricing HTML) */
 .summary-mini-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -473,6 +477,15 @@ li{
     grid-template-columns: 1fr;
   }
 
+  .hero-side{
+    grid-column: auto;
+    align-items: stretch;
+  }
+
+  .hero-summary{
+    max-width: 100%;
+  }
+
   .container.narrow{
     width: min(920px, 92%);
   }
@@ -515,8 +528,6 @@ li{
   .summary-mini-grid{
     grid-template-columns: 1fr;
   }
-}
-
 }
 
 
