@@ -376,6 +376,12 @@ header a img {
   height: 56px;
   width: auto;
 }
+/* Resize Good Human logo only (not header/banner) */
+.goodhuman-logo {
+  height: 56px;      /* try 56–72px */
+  width: auto;
+  max-height: none;
+}
 
 
 }
