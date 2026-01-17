@@ -371,6 +371,11 @@ header img,
   width: auto;
   max-height: none;
 }
+/* Target logo image in header */
+header a img {
+  height: 56px;
+  width: auto;
+}
 
 
 }
