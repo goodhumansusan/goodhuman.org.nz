@@ -72,13 +72,13 @@ a{ color: inherit; }
 }
 
 .nav a{
-  color: #1F5B46;          /* matches your green theme */
-  margin: 0;
-  padding: 8px 2px;
+.nav a:visited,
+.nav a:active{
+  color: #1F5B46;        /* dark green */
+  font-weight: 700;      /* bold */
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.01em;
 }
+
 
 .nav a:visited{
   color: #1F5B46;          /* stops purple visited links */
@@ -87,6 +87,7 @@ a{ color: inherit; }
 .nav a:hover{
   text-decoration: underline;
   opacity: 0.9;
+
 }
 
 
