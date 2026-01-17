@@ -116,6 +116,20 @@ a{ color: inherit; }
   font-weight: 700;
   font-size: 13px;
 }
+.hero-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-summary {
+  width: 340px;   /* adjust if you want */
+  flex-shrink: 0;
+}
 
 .hero h1{
   font-size: 54px;
