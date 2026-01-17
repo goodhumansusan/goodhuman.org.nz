@@ -4,9 +4,10 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.5;
   color: #111;
+  background: #ffffff;
 }
 
 a {
@@ -23,6 +24,7 @@ a {
   top: 0;
   background: white;
   border-bottom: 1px solid #eee;
+  z-index: 10;
 }
 
 .header-inner {
@@ -41,6 +43,7 @@ a {
   margin-left: 18px;
   text-decoration: none;
   opacity: 0.85;
+  font-weight: 500;
 }
 
 .nav a:hover {
@@ -60,7 +63,7 @@ a {
 
 .hero p {
   font-size: 18px;
-  max-width: 60ch;
+  max-width: 70ch;
 }
 
 .button {
@@ -77,6 +80,15 @@ a {
   padding: 60px 0;
 }
 
+.section h2 {
+  margin-top: 0;
+}
+
+.section h3 {
+  margin-top: 26px;
+}
+
+/* SERVICES GRID */
 .grid {
   display: grid;
   gap: 18px;
@@ -91,6 +103,38 @@ a {
   background: white;
 }
 
+/* PRICING */
+.pricing-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 18px;
+}
+
+.price-card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0 14px;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* FOOTER */
 .footer {
   border-top: 1px solid #eee;
   padding: 25px 0;
@@ -98,7 +142,16 @@ a {
   opacity: 0.7;
 }
 
-@media (max-width: 800px) {
+/* MOBILE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -108,10 +161,6 @@ a {
   .nav a {
     margin-left: 0;
     margin-right: 14px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
   }
 }
 
