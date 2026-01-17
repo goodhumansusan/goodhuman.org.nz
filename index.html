@@ -5,335 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Good Human — practical, compliant, commercially focused HR support for SMEs across New Zealand." />
   <title>Good Human | Practical HR Support for NZ Businesses</title>
-<link rel="stylesheet" href="style.css?v=20260116a">
 
-
+  <!-- External stylesheet (single source of truth) -->
+  <link rel="stylesheet" href="style.css?v=20260117a">
 
   <!-- DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg: #0b1220;
-      --card: rgba(255,255,255,0.06);
-      --card2: rgba(255,255,255,0.08);
-      --text: rgba(255,255,255,0.92);
-      --muted: rgba(255,255,255,0.72);
-      --muted2: rgba(255,255,255,0.60);
-      --border: rgba(255,255,255,0.14);
-      --shadow: 0 16px 50px rgba(0,0,0,0.35);
-      --radius: 18px;
-
-      --accent: #7cf2c5;
-      --accent2: #77b7ff;
-      --accent3: #ffd36c;
-
-      --max: 1120px;
-    }
-
-    *{ box-sizing: border-box; }
-    html, body { height: 100%; }
-    body{
-      margin: 0;
-      font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--text);
-   background:
-  radial-gradient(1200px 800px at 20% 10%, rgba(124,242,197,0.18), transparent 60%),
-  radial-gradient(900px 700px at 80% 20%, rgba(119,183,255,0.18), transparent 55%),
-  radial-gradient(900px 700px at 60% 90%, rgba(255,211,108,0.10), transparent 55%),
-  linear-gradient(180deg, #f7f9fb 0%, #ffffff 100%);
-
-      line-height: 1.5;
-    }
-
-    a{ color: inherit; text-decoration: none; }
-    a:hover{ opacity: 0.92; }
-
-    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
-
-    /* Nav */
-    .nav{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(12px);
-      background: rgba(7,11,20,0.55);
-      border-bottom: 1px solid rgba(255,255,255,0.10);
-    }
-    .nav-inner{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 0;
-      gap: 16px;
-    }
-    .brand{
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-    }
-    .mark{
-      width: 38px; height: 38px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(124,242,197,1), rgba(119,183,255,1));
-      box-shadow: 0 10px 30px rgba(124,242,197,0.18);
-      display: grid;
-      place-items: center;
-      color: #06101a;
-      font-weight: 800;
-    }
-    .nav-links{
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    .nav-links a{
-      font-size: 14px;
-      color: var(--muted);
-      padding: 8px 10px;
-      border-radius: 12px;
-    }
-    .nav-links a:hover{ background: rgba(255,255,255,0.06); color: var(--text); }
-
-    .btn{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 11px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.06);
-      box-shadow: none;
-      font-weight: 700;
-      font-size: 14px;
-      white-space: nowrap;
-    }
-    .btn:hover{ background: rgba(255,255,255,0.10); }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(124,242,197,0.95), rgba(119,183,255,0.95));
-      border: 1px solid rgba(255,255,255,0.10);
-      color: #06101a;
-      box-shadow: 0 18px 45px rgba(119,183,255,0.18);
-    }
-    .btn.primary:hover{ filter: brightness(1.03); }
-
-    /* Hero */
-    .hero{ padding: 64px 0 22px; }
-    .hero-grid{
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 24px;
-      align-items: start;
-    }
-    .kicker{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.05);
-      color: var(--muted);
-      font-size: 13px;
-    }
-    h1{
-      margin: 14px 0 10px;
-      font-size: clamp(34px, 4vw, 54px);
-      line-height: 1.05;
-      letter-spacing: -0.7px;
-    }
-    .subhead{
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 60ch;
-    }
-    .hero-actions{
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-    .trust{
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 22px;
-    }
-    .pill{
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
-      padding: 12px 12px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .hero-card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 18px;
-    }
-    .hero-card h3{
-      margin: 0 0 6px;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-    }
-    .hero-card p{ margin: 0 0 12px; color: var(--muted); font-size: 14px; }
-    .list{
-      margin: 0; padding-left: 18px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .list li{ margin: 8px 0; }
-
-    /* Sections */
-    section{ padding: 44px 0; }
-    .section-title{
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 14px;
-    }
-    .section-title h2{
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: -0.3px;
-    }
-    .section-title p{
-      margin: 0;
-      color: var(--muted);
-      max-width: 70ch;
-    }
-
-    .grid{
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .card{
-      grid-column: span 4;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius);
-      padding: 16px;
-    }
-    .card h3{
-      margin: 0 0 6px;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-    }
-    .card p{
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .tag{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.78);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.10);
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-    }
-    .dot{
-      width: 10px; height: 10px; border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 3px rgba(124,242,197,0.18);
-    }
-    .dot.blue{ background: var(--accent2); box-shadow: 0 0 0 3px rgba(119,183,255,0.18); }
-    .dot.gold{ background: var(--accent3); box-shadow: 0 0 0 3px rgba(255,211,108,0.16); }
-
-    /* Pricing */
-    .pricing .card{ grid-column: span 4; }
-    .price{
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.6px;
-      margin: 6px 0 8px;
-    }
-    .small{
-      font-size: 13px;
-      color: var(--muted2);
-    }
-    .features{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
-    .features li{ margin: 7px 0; }
-
-    /* CTA */
-    .cta{
-      background: linear-gradient(135deg, rgba(124,242,197,0.13), rgba(119,183,255,0.12));
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: calc(var(--radius) + 6px);
-      padding: 22px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 16px;
-      align-items: center;
-    }
-    .cta h3{ margin: 0 0 6px; font-size: 18px; }
-    .cta p{ margin: 0; color: var(--muted); }
-    .cta-actions{ display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
-
-    /* Footer */
-    footer{
-      padding: 26px 0 42px;
-      color: var(--muted2);
-      font-size: 13px;
-      border-top: 1px solid rgba(255,255,255,0.10);
-    }
-    .footer-grid{
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 14px;
-      align-items: start;
-    }
-    .footer-links{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: flex-end;
-    }
-    .footer-links a{
-      padding: 8px 10px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(255,255,255,0.04);
-      color: var(--muted);
-    }
-
-    /* Responsive */
-    @media (max-width: 920px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .trust{ grid-template-columns: 1fr; }
-      .card{ grid-column: span 12; }
-      .pricing .card{ grid-column: span 12; }
-      .cta{ grid-template-columns: 1fr; }
-      .cta-actions{ justify-content: flex-start; }
-      .footer-grid{ grid-template-columns: 1fr; }
-      .footer-links{ justify-content: flex-start; }
-      .nav-links{ display: none; }
-    }
-  </style>
 </head>
 
 <body>
   <header class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="#top" aria-label="Good Human Home">
-<img src="logo.png" alt="Good Human logo" class="goodhuman-logo">
-
+        <img src="logo.png" alt="Good Human logo" class="goodhuman-logo">
       </a>
 
       <nav class="nav-links" aria-label="Primary">
@@ -606,13 +292,13 @@
               Tell us what you’re dealing with and we’ll suggest the best next step.
             </p>
 
-            <div style="margin-top:12px; color: var(--muted); font-size: 14px;">
+            <div style="margin-top:12px;">
               <strong>Contact:</strong>
               <!-- Update these with your real details -->
               <div style="margin-top:6px;">
                 ✉️ <a href="mailto:hello@goodhuman.co.nz">hello@goodhuman.co.nz</a> &nbsp; • &nbsp;
                 ☎️ <a href="tel:+64000000000">+64 00 000 000</a> &nbsp; • &nbsp;
-                in <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -631,7 +317,7 @@
       <div>
         <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px;">
           <span class="mark" style="width:30px;height:30px;border-radius:10px;">GH</span>
-          <strong style="color:var(--text);">Good Human</strong>
+          <strong>Good Human</strong>
         </div>
         <div>
           Practical, compliant, commercially focused HR support for New Zealand SMEs.
