@@ -114,6 +114,25 @@ a{ color: inherit; }
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  
+.hero-email{
+  margin: 10px 0 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--brand-2);
+}
+
+.hero-email a{
+  color: var(--brand-2);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.hero-email a:hover{
+  text-decoration: underline;
+}
+
+  
 }
 .icon-strip{
   margin-top: 18px;
