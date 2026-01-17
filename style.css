@@ -355,6 +355,14 @@ section li::marker,
 .container li::marker {
   color: #111827 !important;
 }
+/* More targeted (edit .help-with to your box class if you know it) */
+.help-with, .help-with * {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+.help-with li::marker {
+  color: #111827 !important;
+}
 
 
 }
