@@ -363,6 +363,14 @@ section li::marker,
 .help-with li::marker {
   color: #111827 !important;
 }
+/* Increase logo size WITHOUT changing header height */
+header img,
+.navbar img,
+.logo img {
+  height: 48px;       /* try 48–64px */
+  width: auto;
+  max-height: none;
+}
 
 
 }
