@@ -20,6 +20,8 @@ body{
   background: linear-gradient(180deg, var(--tint), #fff 35%);
 }
 
+}
+
 a{ color: inherit; }
 
 .container{
@@ -44,12 +46,21 @@ a{ color: inherit; }
   padding: 18px 0;
 }
 
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.brand{
-  display: inline-flex;
+/* NAV RIGHT */
+.nav{
+  display: flex;
   align-items: center;
-  text-decoration: none;
+  gap: 26px;
+  margin-left: auto;         /* pushes it right */
+  justify-content: flex-end; /* keeps it aligned to the right */
+}
+
 }
 
 /* Header logo (bigger). If your file has lots of whitespace, the object-fit helps. */
