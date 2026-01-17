@@ -42,7 +42,7 @@ a{ color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 12px 0;
   gap: 18px;
 }
 
@@ -54,10 +54,11 @@ a{ color: inherit; }
 
 /* Logo */
 .logo{
-  height: 80px;     /* adjust 70–90 */
+  height: 56px;   /* try 52–60 */
   width: auto;
   object-fit: contain;
   display: block;
+
 }
 
 /* Nav on the right */
