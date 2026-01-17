@@ -302,6 +302,9 @@ header.nav a.brand img.goodhuman-logo {
   display: flex;
   align-items: center;
 }
+<a class="brand" href="#top">
+  <img class="goodhuman-logo">
+</a>
 
 .nav {
   height: auto;
