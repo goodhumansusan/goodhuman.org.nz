@@ -117,16 +117,19 @@ a{ color: inherit; }
 }
 .icon-strip{
   margin-top: 18px;
+  width: 100%;
   display: flex;
-  gap: 14px;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   opacity: 0.9;
 }
 
 .icon-strip img{
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   display: block;
+}
+
 }
 
 .pill{
