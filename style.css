@@ -44,6 +44,8 @@ a{ color: inherit; }
   padding: 18px 0;
 }
 
+}
+
 .brand{
   display: inline-flex;
   align-items: center;
@@ -65,8 +67,11 @@ a{ color: inherit; }
 .nav{
   display: flex;
   align-items: center;
-  gap: 26px;                 /* spacing between menu items */
-  font-family: "DM Sans", Arial, sans-serif;
+  justify-content: flex-end;
+  gap: 26px;
+  margin-left: auto;
+}
+
 }
 
 .nav a{
