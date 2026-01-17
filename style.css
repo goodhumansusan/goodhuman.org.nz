@@ -28,7 +28,6 @@ a{ color: inherit; }
   width: min(1100px, 92%);
   margin: 0 auto;
 }
-
 /* HEADER */
 .header{
   position: sticky;
@@ -44,49 +43,35 @@ a{ color: inherit; }
   align-items: center;
   justify-content: space-between;
   padding: 18px 0;
+  gap: 18px;
 }
 
 .brand{
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
+  text-decoration: none;
 }
 
-/* NAV RIGHT */
-.nav{
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  margin-left: auto;         /* pushes it right */
-  justify-content: flex-end; /* keeps it aligned to the right */
-}
-
-}
-
-/* Header logo (bigger). If your file has lots of whitespace, the object-fit helps. */
+/* Logo */
 .logo{
-  height: 80px;   /* try 70–90 */
+  height: 80px;     /* adjust 70–90 */
   width: auto;
   object-fit: contain;
   display: block;
 }
 
-}
-
-}
-
+/* Nav on the right */
 .nav{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 26px;
-  margin-left: auto;
-}
-
+  margin-left: auto; /* pushes the nav to the far right */
+  font-family: "DM Sans", Arial, sans-serif;
 }
 
 .nav a{
-  margin: 0;                 /* important: remove old margin rules */
+  margin: 0;
   padding: 8px 2px;
   text-decoration: none;
   opacity: 0.9;
@@ -99,7 +84,6 @@ a{ color: inherit; }
   text-decoration: underline;
 }
 
-}
 
 /* HERO */
 .hero{
