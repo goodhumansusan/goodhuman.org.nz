@@ -52,10 +52,12 @@ a{ color: inherit; }
 
 /* Header logo (bigger). If your file has lots of whitespace, the object-fit helps. */
 .logo{
-  height: 90px;
-  width: 230px;
-  object-fit: cover;
+  height: 110px;
+  width: 280px;
+  object-fit: contain;
   object-position: left center;
+}
+
 }
 
 .nav a{
