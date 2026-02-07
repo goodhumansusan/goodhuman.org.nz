@@ -611,7 +611,48 @@ li{
 .about-text {
   max-width: 500px;
 }
-   
+   /* About Me – keep inside the same page boundaries */
+.about-section {
+  max-width: 900px;     /* adjust to match your other sections if needed */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Photo + text side-by-side */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Force the photo to be a sensible size even if there's a global img { width:100% } */
+.about-photo {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto !important;
+  border-radius: 18px;   /* change to 50% if you want a circle */
+  flex: 0 0 auto;
+}
+
+/* Keep text readable and aligned */
+.about-text {
+  max-width: 600px;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-photo {
+    width: 200px !important;
+    max-width: 200px !important;
+  }
+}
+
 }
 
 }
