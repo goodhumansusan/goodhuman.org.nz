@@ -584,107 +584,46 @@ li{
   .summary-mini-grid{
     grid-template-columns: 1fr;
   }
-  .about-photo {
-  width: 220px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 2rem auto;
+ /* =========================
+   ABOUT SECTION (CLEAN)
+   ========================= */
 
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2.5rem;
-}
-
-.about-photo {
-  width: 220px;
-  max-width: 220px;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.about-text {
-  flex: 1;
-}
-
-/* Mobile: stack photo above text */
-@media (max-width: 700px) {
-  .about-container {
-    flex-direction: column;
-  }
-}
-
-}
-   /* About Me – keep inside the same page boundaries */
-.about-section {
-  max-width: 900px;     /* adjust to match your other sections if needed */
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Photo + text side-by-side */
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-/* Force the photo to be a sensible size even if there's a global img { width:100% } */
-.about-photo {
-  width: 220px !important;
-  max-width: 220px !important;
-  height: auto !important;
-  border-radius: 18px;   /* change to 50% if you want a circle */
-  flex: 0 0 auto;
-}
-
-/* Keep text readable and aligned */
-.about-text {
-  max-width: 600px;
-}
-
-/* Mobile: stack nicely */
-@media (max-width: 700px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .about-photo {
-    width: 200px !important;
-    max-width: 200px !important;
-  }
-}/* Bulletproof sizing for Susan photo */
-#about img.about-photo {
-  width: 220px !important;
-  max-width: 220px !important;
-  height: auto !important;
-  display: block;
-}
-#about .about-container {
-  display: flex !important;
-  gap: 2rem;
-  align-items: flex-start;
+#about.about-section {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
+#about .about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#about img.about-photo {
+  width: 220px;
+  max-width: 220px;
+  height: auto;
+  flex: 0 0 220px;
+  display: block;
+  border-radius: 50%;
+}
+
 #about .about-text {
   flex: 1;
+  min-width: 260px;
 }
 
 /* Mobile: stack */
 @media (max-width: 700px) {
   #about .about-container {
-    flex-direction: column !important;
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-
+  #about .about-text {
+    min-width: 0;
+  }
 }
 
 }
