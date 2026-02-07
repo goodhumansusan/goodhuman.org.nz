@@ -657,7 +657,14 @@ li{
     width: 200px !important;
     max-width: 200px !important;
   }
+}/* Bulletproof sizing for Susan photo */
+#about img.about-photo {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto !important;
+  display: block;
 }
+
 
 }
 
