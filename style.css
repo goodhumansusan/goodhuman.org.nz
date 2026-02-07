@@ -625,6 +625,51 @@ li{
     min-width: 0;
   }
 }
+/* ========= ABOUT (FORCE OVERRIDE) ========= */
+
+/* Keep About inside the same content column */
+body #about.about-section {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 2rem 1rem !important;
+}
+
+/* Force side-by-side layout */
+body #about.about-section > .about-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 2rem !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Force photo to a fixed size even if global img rules exist */
+body #about.about-section img.about-photo {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto !important;
+  flex: 0 0 220px !important;
+  display: block !important;
+  border-radius: 50% !important;
+  margin: 0 !important;          /* kills any auto-centering */
+}
+
+/* Make the text sit to the RIGHT and take remaining space */
+body #about.about-section .about-text {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+/* Mobile stacking */
+@media (max-width: 700px) {
+  body #about.about-section > .about-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
 
 }
 
