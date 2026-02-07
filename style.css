@@ -664,6 +664,25 @@ li{
   height: auto !important;
   display: block;
 }
+#about .about-container {
+  display: flex !important;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#about .about-text {
+  flex: 1;
+}
+
+/* Mobile: stack */
+@media (max-width: 700px) {
+  #about .about-container {
+    flex-direction: column !important;
+  }
+}
 
 
 }
